@@ -1,2 +1,7 @@
-# Binary
-Binary for uchain database
+# Binary for uchain database
+
+See <https://github.com/uchaindb/Binary/releases> for download.
+
+Prerequisite:
+
+* [.Net core 2.0](https://www.microsoft.com/net/download/Windows/run)
