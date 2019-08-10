@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  uchaindb:
+    image: uchaindb/uchaindb
+    ports:
+      - "8912:80"
+    volumes:
+      - ./data:/www/data
+      - ./logs:/www/logs
+    environment:
+      - "AppSettings:EnableAdminIndex=false"
+      - "AppSettings:NetworkId=123456789"
+      - "AppSettings:BlockGenerationTime=10000"
+      - "AppSettings:Name=DefaultNode"
+      - "AppSettings:PrivateKey=Ent2iDkLFS5huxVwXUhpDAJR8hKoFQW7iUkxfCkf5tLw"
+      - "AppSettings:GenesisTime=2017-6-30 09:00:00Z"
+      - "AppSettings:LicenseKey=1234-6789"
+      - "AppSettings:Nodes:0="
+      - "AppSettings:PermittedOperations:0=SyncChain"
+      - "AppSettings:PermittedOperations:1=ModifyData"
+      - "AppSettings:PermittedOperations:2=ModifySchema"
+      - "AppSettings:PermittedOperations:3=ModifyLock"
+      - "AppSettings:PermittedOperations:4=QueryChain"
+      - "AppSettings:PermittedOperations:5=QueryData"
+      - "AppSettings:BlockPersistent:Adapter=Sqlite"
+      - "AppSettings:BlockPersistent:Sqlite:FilePath=data/chainBlocks1.db"
+      - "AppSettings:StatePersistent:Adapter=Sqlite"
+      - "AppSettings:StatePersistent:Sqlite:FilePath=data/chainStates1.db"
+
