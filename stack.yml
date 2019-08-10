@@ -1,13 +1,19 @@
 version: '3'
 
+volumes:
+    data:
+        driver: local
+    logs:
+        driver: local
+
 services:
   uchaindb:
     image: uchaindb/uchaindb
     ports:
       - "8912:80"
     volumes:
-      - ./data:/www/data
-      - ./logs:/www/logs
+      - data:/www/data
+      - logs:/www/logs
     environment:
       - "AppSettings:EnableAdminIndex=false"
       - "AppSettings:NetworkId=123456789"
