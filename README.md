@@ -11,3 +11,5 @@ Usage:
 ```
 $ dotnet NodeWeb.dll
 ```
+
+Easily play with docker: [Play](https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/uchaindb/Binary/master/stack.yml)
