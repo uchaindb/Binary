@@ -15,13 +15,12 @@ services:
       - data:/www/data
       - logs:/www/logs
     environment:
-      - "AppSettings:EnableAdminIndex=false"
+      - "AppSettings:EnableAdminIndex=true"
       - "AppSettings:NetworkId=123456789"
       - "AppSettings:BlockGenerationTime=10000"
       - "AppSettings:Name=DefaultNode"
       - "AppSettings:PrivateKey=Ent2iDkLFS5huxVwXUhpDAJR8hKoFQW7iUkxfCkf5tLw"
       - "AppSettings:GenesisTime=2017-6-30 09:00:00Z"
-      - "AppSettings:LicenseKey=1234-6789"
       - "AppSettings:Nodes:0="
       - "AppSettings:PermittedOperations:0=SyncChain"
       - "AppSettings:PermittedOperations:1=ModifyData"
