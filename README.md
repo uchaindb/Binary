@@ -1,7 +1,5 @@
 # Binary for uchain database
 
-See <https://github.com/uchaindb/Binary/releases> for download.
-
 ## Run
 
 Prerequisite:
@@ -10,9 +8,12 @@ Prerequisite:
 
 Usage:
 
-```
-$ dotnet NodeWeb.dll
-```
+* See <https://github.com/uchaindb/Binary/releases> for download.
+* Extract to any directory.
+* Run
+  ```
+  $ dotnet NodeWeb.dll
+  ```
 
 ## Play with docker (demo)
 
