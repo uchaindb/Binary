@@ -41,7 +41,7 @@ You can painless play with docker online:
 
 The demo will last up to 4 hours. It can also be stopped at any time by clicking on the `CLOSE SESSION` link at the top left of the "Play with Docker" page.
 
-## First expression
+## First impression
 
 After the initialization, you got yourself a demo environment.
 
